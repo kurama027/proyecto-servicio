@@ -6,5 +6,5 @@ RUN ln -snf /usr/share/zoneinfo/${TZ} /etc/localtime
 RUN echo "${TZ}" > /etc/timezone
 VOLUME /tmp
 EXPOSE 8004
-ADD ./target/helena-persona-0.0.1-SNAPSHOT.jar helena-servicio-proyecto-0.0.1-SNAPSHOT.jar
+ADD ./target/helena-servicio-proyecto-0.0.1-SNAPSHOT.jar helena-servicio-proyecto-0.0.1-SNAPSHOT.jar
 ENTRYPOINT ["java", "-jar", "/helena-servicio-proyecto-0.0.1-SNAPSHOT.jar"]
